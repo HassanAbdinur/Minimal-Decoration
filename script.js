@@ -9,10 +9,8 @@ new fullpage('#page', {
         if (destination.index === 1) {
             const chairs = document.querySelectorAll('.chairs');
             const description = document.querySelectorAll('.description');
-            const thirdDescription = document.querySelector('.description-3');
             tl.fromTo(chairs, 0.7, {x: "100%"}, {x: "-10%"})
             .fromTo(description, 0.5, { y: "50", opacity: 0 }, { y: "0", opacity: 1 })
-            // .fromTo(thirdDescription, 0.5 {  })
             .fromTo(chairs[0], 1, { opacity: 1 }, { opacity: 1 })
             .fromTo(chairs[1], 1, { opacity: 0 }, { opacity: 1 })
             .fromTo(chairs[2], 1, { opacity: 0 }, { opacity: 1 });
