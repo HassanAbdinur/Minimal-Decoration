@@ -15,5 +15,9 @@ new fullpage('#page', {
             .fromTo(chairs[1], 1, { opacity: 0 }, { opacity: 1 })
             .fromTo(chairs[2], 1, { opacity: 0 }, { opacity: 1 });
         }
+        if (destination.index === 2) {
+            const description = document.querySelectorAll('.description')
+            .fromTo(description, 0.5, { y: "50", opacity: 0 }, { y: "0", opacity: 1 });
+        }
     }
 });
